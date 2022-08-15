@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:screen/core/consts/colors.dart';
 
-import '../mdels/white_background_container.dart';
+import '../widgets/search_container_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
     var mediaQuerySize = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: mediaQuerySize.width * 0.05),
+        padding: EdgeInsets.symmetric(horizontal: mediaQuerySize.width * 0.03),
         child: Column(
           children: [
             Padding(
@@ -57,42 +57,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            WhiteBackgraundContainer(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.only(top: 12.0),
-                    child: Row(
-                      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(
-                            left: mediaQuerySize.width * 0.06,
-                          ),
-                          child: Icon(
-                            Icons.search,
-                            color: selectedIconColor,
-                          ),
-                        ),
-                        Flexible(
-                          // width: 200,
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: mediaQuerySize.width * 0.04),
-                            child: TextField(
-                              decoration: InputDecoration(
-                                  hintText: "Counyty name",
-                                  hintStyle:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                            ),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
+            SearchContinerWidget(),
             // WhiteBackgraundContainer(),
             // WhiteBackgraundContainer()
           ],
