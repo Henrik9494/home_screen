@@ -18,15 +18,15 @@ class ButtonSearchContainer extends StatelessWidget {
       onTap: mFunction,
       child: Container(
         width: mediaQuerySize.width * 0.24,
-        height: mediaQuerySize.height * 0.05,
+        height: mediaQuerySize.height * 0.04,
         decoration: BoxDecoration(
             color: mColor,
-            borderRadius: BorderRadius.all(Radius.circular(100))),
+            borderRadius: const BorderRadius.all(Radius.circular(100))),
         child: Center(
             child: Text(
           mText,
           style: TextStyle(
-              color: Colors.white, fontSize: mediaQuerySize.width * 0.05),
+              color: Colors.white, fontSize: mediaQuerySize.width * 0.04),
         )),
       ),
     );

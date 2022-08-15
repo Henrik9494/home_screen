@@ -23,13 +23,14 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     radius: mediaQuerySize.width * 0.05,
-                    backgroundImage: AssetImage("assets/images/person.jpg"),
+                    backgroundImage:
+                        const AssetImage("assets/images/person.jpg"),
                   ),
                   Row(
                     children: [
                       GestureDetector(
                         onTap: () {},
-                        child: Icon(
+                        child: const Icon(
                           Icons.align_vertical_bottom_sharp,
                           color: selectedIconColor,
                         ),
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                             horizontal: mediaQuerySize.width * 0.04),
                         child: GestureDetector(
                           onTap: () {},
-                          child: Icon(
+                          child: const Icon(
                             Icons.mail_outline_sharp,
                             color: selectedIconColor,
                           ),
@@ -47,7 +48,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {},
-                        child: Icon(
+                        child: const Icon(
                           Icons.add_alert_outlined,
                           color: selectedIconColor,
                         ),
