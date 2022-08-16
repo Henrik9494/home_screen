@@ -19,14 +19,16 @@ class UsersPhoneNumberListModel extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: const Padding(
-        padding: EdgeInsets.only(top: 8.0),
+        padding: EdgeInsets.only(
+          top: 8.0,
+        ),
         child: Icon(
           Icons.phone_android,
           color: selectedIconColor,
         ),
       ),
       trailing: Wrap(
-        spacing: 12, // space between two icons
+        spacing: 4, // space between two icons
         children: [
           CircleButtonModel(
             circleButtonText: "S",
@@ -37,6 +39,7 @@ class UsersPhoneNumberListModel extends StatelessWidget {
               functionOnTap: functionOnTapInvoise), // // icon-2
         ],
       ),
+      horizontalTitleGap: 2,
       title: Text(
         phoneNumber,
         style: const TextStyle(

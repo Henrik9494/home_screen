@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../models/users_phone_numbers_model.dart';
 import '../models/white_background_container.dart';
 
-class UnitedStatesContainer extends StatelessWidget {
-  const UnitedStatesContainer({Key? key}) : super(key: key);
+class UnitedKingdomContainer extends StatelessWidget {
+  const UnitedKingdomContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,14 +19,15 @@ class UnitedStatesContainer extends StatelessWidget {
                 height: mediaQuerySize.height * 0.04,
                 width: mediaQuerySize.width * 0.11,
                 decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(10)),
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
                     image: DecorationImage(
-                        image: AssetImage("assets/images/download.png"))),
+                        image: AssetImage(
+                            "assets/images/uk_united_kingdom.webp"))),
               ),
               const Padding(
                 padding: EdgeInsets.only(left: 10.0),
                 child: Text(
-                  "United States",
+                  "United Kingdom",
                   style: TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -42,7 +43,7 @@ class UnitedStatesContainer extends StatelessWidget {
             child: Column(
               children: [
                 UsersPhoneNumberListModel(
-                  phoneNumber: '+1(201)123-45-67',
+                  phoneNumber: '+44(201)123-45-67',
                   regions: 'New Jersey',
                   functionOnTapInSms: () {
                     debugPrint("Sms Circle Button");
@@ -52,7 +53,7 @@ class UnitedStatesContainer extends StatelessWidget {
                   },
                 ),
                 UsersPhoneNumberListModel(
-                  phoneNumber: '+1(201)123-45-67',
+                  phoneNumber: '+44(204)123-45-67',
                   regions: 'New Jersey',
                   functionOnTapInSms: () {
                     debugPrint("Sms Circle Button");
@@ -62,7 +63,7 @@ class UnitedStatesContainer extends StatelessWidget {
                   },
                 ),
                 UsersPhoneNumberListModel(
-                  phoneNumber: '+1(201)123-45-67',
+                  phoneNumber: '+44(209)123-45-67',
                   regions: 'New Jersey',
                   functionOnTapInSms: () {
                     debugPrint("Sms Circle Button");
