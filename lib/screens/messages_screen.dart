@@ -5,6 +5,6 @@ class MessagesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: const Center(child: Text("messages")));
+    return const Center(child: Text("messages"));
   }
 }

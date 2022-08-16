@@ -11,9 +11,9 @@ class WhiteBackgraundContainer extends StatelessWidget {
       // height: 500,
 
       decoration: BoxDecoration(
-        color: Color.fromARGB(255, 216, 213, 213),
+        color: const Color.fromARGB(255, 216, 213, 213),
         borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
@@ -21,7 +21,7 @@ class WhiteBackgraundContainer extends StatelessWidget {
             Color.fromARGB(255, 255, 255, 255),
           ],
         ),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Color.fromARGB(255, 198, 164, 164),
             offset: Offset(2.0, 2.0),

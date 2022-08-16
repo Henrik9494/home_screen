@@ -5,6 +5,6 @@ class ContactsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(child: const Center(child: Text("Contacts")));
+    return const Center(child: Text("Contacts"));
   }
 }

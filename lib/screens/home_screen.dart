@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:screen/core/consts/colors.dart';
 
 import '../widgets/search_container_widget.dart';
+import '../widgets/united_states_container.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -59,6 +60,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SearchContinerWidget(),
+            const UnitedStatesContainer(),
             // WhiteBackgraundContainer(),
             // WhiteBackgraundContainer()
           ],
