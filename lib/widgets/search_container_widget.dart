@@ -89,11 +89,11 @@ class SearchContinerWidget extends StatelessWidget {
               width: mediaQuerySize.width * 0.82,
               decoration: BoxDecoration(
                   border: Border.all(),
-                  borderRadius: BorderRadius.circular(20)),
+                  borderRadius: BorderRadius.circular(10)),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 10),
                 child: DropdownButton(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(20),
                   value: dropdownValue,
                   icon: Padding(
                     padding: EdgeInsets.only(left: mediaQuerySize.width * 0.4),
@@ -102,8 +102,8 @@ class SearchContinerWidget extends StatelessWidget {
                   elevation: 16,
                   style: const TextStyle(
                       fontWeight: FontWeight.bold, color: searchButtonColor),
-                  onChanged: (String? newValue) {
-                    dropdownValue = newValue!;
+                  onChanged: (String? value) {
+                    dropdownValue = value!;
                   },
                   items: <String>[
                     'Landline or Mobile',
